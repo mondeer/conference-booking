@@ -25,6 +25,8 @@ Route::resource('/room', 'RoomCtrl');
 Route::get('/rooms/bookings', 'RoomCtrl@view');
 
 
-// Route::get('/register', function() {
-//   return view('register');
-// });
+// admin routes
+
+Route::get('/system/admin', function() {
+  return view('admin.admindash');
+});
