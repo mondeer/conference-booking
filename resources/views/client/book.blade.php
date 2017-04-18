@@ -1,4 +1,4 @@
-@extends('admin.dashboard')
+@extends('client.dashboard')
 
 @section('content')
 @foreach($items as $item)

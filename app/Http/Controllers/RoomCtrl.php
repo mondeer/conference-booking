@@ -17,14 +17,9 @@ class RoomCtrl extends Controller
         //
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
-        return view('admin.apply');
+        return view('client.apply');
     }
 
     public function store(Request $request)
@@ -44,7 +39,7 @@ class RoomCtrl extends Controller
     public function view() {
       $rooms = Room::all();
 
-      return view('admin.view')->with('rooms', $rooms);
+      return view('client.view')->with('rooms', $rooms);
     }
 
     public function show($id)

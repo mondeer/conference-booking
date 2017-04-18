@@ -1,4 +1,4 @@
-@extends('admin.dashboard')
+@extends('client.dashboard')
 
 @section('content')
 <header class="panel-heading no-border">

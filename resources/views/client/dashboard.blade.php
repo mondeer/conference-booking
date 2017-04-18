@@ -57,7 +57,7 @@
                                         <img src="/img/64-64.jpg" alt="" class="img-rounded" />
                                     </a>
                                     <div class="media-body">
-                                        <h4 class="media-heading">{{ Auth::user()->name }} <span class="caret"></span></h4>
+                                        <h4 class="media-heading">{{ Sentinel::getUser()->first_name }} <span class="caret"></span></h4>
 
                                     </div>
                                 </div>
@@ -67,13 +67,13 @@
                                 <hr />
                                 &nbsp;
 
-                                    <a href="{{ route('logout') }}"
+                                    <a href="/logout"
                                         onclick="event.preventDefault();
                                                  document.getElementById('logout-form').submit();">
                                         Logout
                                     </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    <form id="logout-form" action="/logout" method="POST" style="display: none;">
                                         {{ csrf_field() }}
                                     </form>
 
