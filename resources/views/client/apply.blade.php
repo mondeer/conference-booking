@@ -7,74 +7,94 @@
           </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-6 col-md-offset-2">
+
+            <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+              <h5>Book Conference Room</h5>
+            </div>
+
+              <form action="/room/book" method="POST" class="form-horizontal">
+                {{csrf_field()}}
+
+                <div class="control-group">
+                  <label class="control-label">Name Of Room :</label>
+                  <div class="controls">
+                    <select class="" name="room_name">
+                      @foreach($rooms as $room)
+                        <option>{{$room->room_name}}</option>
+                      @endforeach
+                    </select>
+                  </div>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label">Duration of Event:</label>
+                  <div class="controls">
+                    <input type="number" class="" name="hours_schedule" placeholder="Duration of Event" required/>
+                  </div>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label">Date of Event:</label>
+                  <div class="controls">
+                    <input type="text" data-date="01-04-2017" data-date-format="dd-mm-yyyy" value="01-04-2017" class="datepicker" name="day_schedule" placeholder="Day of Event" required/>
+                    <span class="help-block">*PLEASE USE dd-mm-yyyy format</span>
+                  </div>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label">Contact Person Mobile :</label>
+                  <div class="controls">
+                    <input type="tel" name="contact_person_phone" class="" required/>
+                    <span class="help-block">*Enter Phone Number, starting with +254</span>
+                  </div>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+
+              </form>
+            <!-- </div> -->
+
+        </div>
+
+        <div class="col-md-4">
           <div class="panel panel-default">
             <div class="panel-heading">
-
+                Basic Tabs
             </div>
             <div class="panel-body">
-             <form class="form-horizontal" method="POST" action="/room">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#home" data-toggle="tab">Home</a>
+                    </li>
+                    <li class=""><a href="#profile" data-toggle="tab">Profile</a>
+                    </li>
+                    <li class=""><a href="#messages" data-toggle="tab">Messages</a>
+                    </li>
+                    <li class=""><a href="#settings" data-toggle="tab">Settings</a>
+                    </li>
+                </ul>
 
-                <input type="hidden" name="_token" value="{{csrf_token()}}">
-
-                <div class="form-group">
-                  <label>Employee Name</label>
-                  <input type="text" class="form-control" name="emp_name" value="{{old('emp_name')}}" placeholder="Employee Name" />
+                <div class="tab-content">
+                    <div class="tab-pane fade active in" id="home">
+                        <h4>Home Tab</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="tab-pane fade" id="profile">
+                        <h4>Profile Tab</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="tab-pane fade" id="messages">
+                        <h4>Messages Tab</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="tab-pane fade" id="settings">
+                        <h4>Settings Tab</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
                 </div>
-
-                <hr>
-
-                <div class="form-group">
-                  <label class="col-md-2">Email</label>
-                  <div class="">
-                    <input class="col-md-4 form-control" type="text" name="email" value="{{old('email')}}" placeholder="Employee Email" />
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Personal Number</label>
-                  <input type="text" class="form-control" name="pf" value="{{old('pf')}}" placeholder="Personal Number" />
-                </div>
-
-                <hr>
-
-                <div class="form-group">
-                  <label class="col-md-4">Departments</label>
-                  <div class="">
-                    <select class="col-md-3" name="department">
-                      <option></option>
-                      <option>ICT</option>
-                      <option>Supplies</option>
-                      <option>Nursing</option>
-                      <option>Records</option>
-                      <option>House Keeping</option>
-                    </select>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="form-group">
-                  <label class="col-md-4">Conference Room</label>
-                  <div class="">
-                    <select class="col-md-3" name="room">
-                      <option></option>
-                      <option>Room 1</option>
-                      <option>Room 2</option>
-                      <option>Room 3</option>
-                      <option>Room 4</option>
-                    </select>
-                  </div>
-                </div>
-
-                <hr>
-
-                <button type="submit" class="btn btn-default">Submit</button>
-              </div>
-            </form>
-          </div>
-          </div>
+            </div>
+        </div>
       </div>
 @endsection

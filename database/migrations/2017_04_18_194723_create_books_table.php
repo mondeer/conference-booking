@@ -6,18 +6,13 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateBooksTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('books', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('room_name');
             $table->integer('hours_schedule');
             $table->date('day_schedule');
-            $table->string('attendance')->nullable();
             $table->string('department');
             $table->string('contact_person_phone');
             $table->string('contact_person_email');
@@ -25,11 +20,6 @@ class CreateBooksTable extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('books');

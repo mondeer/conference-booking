@@ -5,7 +5,7 @@
     <div class="span6">
         <div class="widget-box">
           <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-            <h5>Personal-info</h5>
+            <h5>Register Conference Room</h5>
           </div>
           <div class="widget-content nopadding">
             <form action="/system/roomreg" method="POST" class="form-horizontal">
@@ -29,7 +29,7 @@
                   <input type="number" name="capacity" class="span11" placeholder="Capacity of the Room" />
                   <span class="help-block">*Capacity</span> </div>
                 </div>
-              
+
 
               <div class="form-actions">
                 <button type="submit" class="btn btn-success">Submit</button>

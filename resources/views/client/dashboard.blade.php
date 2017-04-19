@@ -12,9 +12,18 @@
     <link href="{{ url ('/css/font-awesome.css')}}" rel="stylesheet" />
     <!-- CUSTOM STYLE  -->
     <link href="{{ url ('/css/style.css')}}" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ asset ('admin/css/bootstrap.min.css')}}" />
+    <link rel="stylesheet" href="{{ asset ('admin/css/bootstrap-responsive.min.css')}}" />
+    <link rel="stylesheet" href="{{ asset ('admin/css/fullcalendar.css')}}" />
+    <link rel="stylesheet" href="{{ asset ('admin/css/maruti-style.css')}}" />
+    <link rel="stylesheet" href="{{ asset ('admin/css/select2.css')}}" />
+    <link rel="stylesheet" href="{{ asset ('admin/css/datepicker.css')}}" class="skin-color" />
 
 </head>
-<body>
+<body class="">
+  <div class="imond">
+
+
     <header>
         <div class="container">
             <div class="row">
@@ -28,7 +37,7 @@
         </div>
     </header>
     <!-- HEADER END-->
-    <div class="navbar navbar-inverse set-radius-zero">
+    <div class="navbar1 navbar-inverse ">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -38,51 +47,9 @@
                 </button>
                 <a class="navbar-brand" href="/">
 
-                    <img src="/img/mtrh.png" width="100" height="100" />
+                    <img src="/img/mtrh.png" width="80" height="80" />
                 </a>
 
-            </div>
-
-            <div class="left-div">
-                <div class="user-settings-wrapper">
-                    <ul class="nav">
-
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
-                                <span class="glyphicon glyphicon-user" style="font-size: 25px;"></span>
-                            </a>
-                            <div class="dropdown-menu dropdown-settings">
-                                <div class="media">
-                                    <a class="media-left" href="#">
-                                        <img src="/img/64-64.jpg" alt="" class="img-rounded" />
-                                    </a>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">{{ Sentinel::getUser()->first_name }} <span class="caret"></span></h4>
-
-                                    </div>
-                                </div>
-                                <hr />
-                                <h5><strong>Personal Bio : </strong></h5>
-                                System Developer
-                                <hr />
-                                &nbsp;
-
-                                    <a href="/logout"
-                                        onclick="event.preventDefault();
-                                                 document.getElementById('logout-form').submit();">
-                                        Logout
-                                    </a>
-
-                                    <form id="logout-form" action="/logout" method="POST" style="display: none;">
-                                        {{ csrf_field() }}
-                                    </form>
-
-                            </div>
-                        </li>
-
-
-                    </ul>
-                </div>
             </div>
         </div>
     </div>
@@ -95,8 +62,17 @@
                         <ul id="menu-top" class="nav navbar-nav navbar-right">
                             <li><a class="menu-top-active" href="#">Dashboard</a></li>
                             <li><a href="#">Available Rooms</a></li>
-                            <li><a href="/room/create">Request For a Conference Room</a></li>
-                            <li><a href="/rooms/bookings">My Bookings</a></li>
+                            <li><a href="/room/book">Request For a Conference Room</a></li>
+                            <li><a href="/rooms/view/bookings">My Bookings</a></li>
+                            <li><a href="/logout"
+                                onclick="event.preventDefault();
+                                         document.getElementById('logout-form').submit();">
+                                Logout
+                            </a>
+                            <form id="logout-form" action="/logout" method="POST" style="display: none;">
+                                {{ csrf_field() }}
+                            </form>
+                            </li>
                           </ul>
                     </div>
                 </div>
@@ -104,6 +80,7 @@
             </div>
         </div>
     </section>
+  </div>
     <!-- MENU SECTION END-->
     <div class="content-wrapper">
         <div class="container">
@@ -124,5 +101,15 @@
     <script src="{{ url ('/js/jquery-1.11.1.js')}}"></script>
     <!-- BOOTSTRAP SCRIPTS  -->
     <script src="{{ url ('/js/bootstrap.js')}}"></script>
+    <script src="{{ url ('js/jquery.min.js')}}"></script>
+    <script src="{{ url ('js/jquery.ui.custom.js')}}"></script>
+    <script src="{{ url ('js/bootstrap.min.js')}}"></script>
+    <script src="{{ url ('js/bootstrap-colorpicker.js')}}"></script>
+    <script src="{{ url ('js/bootstrap-datepicker.js')}}"></script>
+    <script src="{{ url ('js/jquery.uniform.js')}}"></script>
+    <script src="{{ url ('js/select2.min.js')}}"></script>
+    <script src="{{ url ('js/maruti.js')}}"></script>
+    <script src="{{ url ('js/maruti.form_common.js')}}"></script>
+
 </body>
 </html>

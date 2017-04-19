@@ -167,7 +167,7 @@ header {
 /* MENU LINKS SECTION*/
 
 .menu-section {
-    background-color: #3D3D3D;
+    background-color: rgba(121,10,10, 0.8);
 }
 
 #menu-top a {
@@ -191,7 +191,7 @@ header {
 }
 
 .navbar-inverse {
-    background-color: #3399FF;
+    background-color: rgba(121,10,10, 0.8);
     border-color: transparent;
 }
 
