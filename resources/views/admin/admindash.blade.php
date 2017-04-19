@@ -109,6 +109,11 @@
 <script src="{{ url ('admin/js/maruti.dashboard.js')}}"></script>
 <script src="{{ url ('admin/js/maruti.chat.js')}}"></script>
 
+      <script>
+          $(".delete").on("submit", function(){
+            return confirm("You are About permanently delete Room, Continue?");
+          });
+      </script>
 
 <script type="text/javascript">
   // This function is called from the pop-up menus to transfer to

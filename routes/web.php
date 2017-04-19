@@ -20,8 +20,6 @@ Route::get('/client/panel', function() {
   return view('client.dashboard');
 });
 
-Route::resource('/room', 'RoomCtrl');
-
 Route::get('/rooms/bookings', 'RoomCtrl@view');
 
 
@@ -31,6 +29,13 @@ Route::get('/system/admin', function() {
   return view('admin.admindash');
 });
 
-Route::get('/system/roomreg', function() {
-  return view('admin.roomregister');
-});
+
+// room routes
+Route::get('/system/roomreg', 'RoomCtrl@create');
+
+Route::post('/system/roomreg', 'RoomCtrl@postCreate');
+
+Route::get('/system/rooms/view', 'RoomCtrl@viewrooms');
+
+Route::delete('/system/{id}/delete', 'RoomCtrl@destroy');
+// end room routes

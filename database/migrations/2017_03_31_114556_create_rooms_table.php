@@ -13,7 +13,7 @@ class CreateRoomsTable extends Migration
             $table->increments('id');
             $table->string('room_name')->nullable();
             $table->integer('room_number');
-            $table->integer('capacity');            
+            $table->integer('capacity');
             $table->timestamps();
         });
     }
