@@ -48,19 +48,20 @@
 </div>
 <!--close-top-Header-menu-->
 
-<div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a><ul>
-    <li class="active"><a href="index.html"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
-    <li> <a href="charts.html"><i class="icon icon-signal"></i> <span>Charts &amp; graphs</span></a> </li>
-    <li> <a href="widgets.html"><i class="icon icon-inbox"></i> <span>Widgets</span></a> </li>
-    <li><a href="tables.html"><i class="icon icon-th"></i> <span>Tables</span></a></li>
-    <li><a href="grid.html"><i class="icon icon-fullscreen"></i> <span>Full width</span></a></li>
-    <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Forms</span> <span class="label label-important">3</span></a>
+<div id="sidebar">
+  <ul>
+    <li class="active"><a href="/system/admin" title="The Administrator"><i class="icon icon-th-large"></i> <span>The Admin Panel</span></a> </li>
+    <li> <a href="/manage/schedules"><i class="icon icon-calendar"></i> <span>Manage Schedules</span></a> </li>
+    <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Manage Conference Rooms</span> <span class=""><i class="icon icon-chevron-down"></i></span></a>
       <ul>
-        <li><a href="form-common.html">Basic Form</a></li>
-        <li><a href="form-validation.html">Form with Validation</a></li>
-        <li><a href="form-wizard.html">Form with Wizard</a></li>
+        <li><a href="form-common.html">Available Rooms</a></li>
+        <li><a href="form-validation.html">Register New Room</a></li>
+        <li><a href="form-wizard.html">Remove Room </a></li>
       </ul>
     </li>
+    <li><a href="tables.html"><i class="icon icon-th"></i> <span>Tables</span></a></li>
+    <li><a href="grid.html"><i class="icon icon-fullscreen"></i> <span>Full width</span></a></li>
+
     <li><a href="buttons.html"><i class="icon icon-tint"></i> <span>Buttons &amp; icons</span></a></li>
     <li><a href="interface.html"><i class="icon icon-pencil"></i> <span>Eelements</span></a></li>
     <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>Addons</span> <span class="label label-important">4</span></a>
@@ -89,18 +90,11 @@
    </div>
 
 
-    <hr>
-
-    <hr>
-
-    <hr>
-
   </div>
 </div>
-</div>
-</div>
+
 <div class="row-fluid">
-  <div id="footer" class="span12"> 2012 &copy; Marutii Admin. Brought to you by <a href="http://themedesigner.in">Themedesigner.in</a> </div>
+  <div id="footer" class="span12"> 2017 &copy; Conference Booking. Brought to you by <a href="#">Glado</a> </div>
 </div>
 <script src="{{ url ('admin/js/excanvas.min.js')}}"></script>
 <script src="{{ url ('admin/js/jquery.min.js')}}"></script>

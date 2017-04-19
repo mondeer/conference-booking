@@ -19,6 +19,7 @@ class CreateBooksTable extends Migration
             $table->date('day_schedule');
             $table->string('attendance')->nullable();
             $table->string('department');
+            $table->string('contact_person');
             $table->timestamps();
         });
     }
