@@ -124,5 +124,11 @@
     <script src="{{ url ('js/maruti.js')}}"></script>
     <script src="{{ url ('js/maruti.form_common.js')}}"></script>
 
+    <script>
+        $(".delete").on("submit", function(){
+          return confirm("You are About permanently delete Room, Continue?");
+        });
+    </script>
+
 </body>
 </html>

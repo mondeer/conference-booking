@@ -26,8 +26,22 @@ class BookCtrl extends Controller
       $bookings->contact_person_email = $user;
       $bookings->save();
 
-      dd($bookings);
+      return redirect('/client/mybookings');
+    }
 
+    public function mybookings() {
+      $user = Sentinel::getUser()->email;
 
+      $bookings = Book::where('contact_person_email', $user)->get();
+
+      return view('client.mybookings')->with('bookings', $bookings);
+    }
+
+    public function destroy($id) {
+      $booking = Book::findOrFail($id);
+
+      $booking->delete();
+
+      return redirect('/client/mybookings');
     }
 }

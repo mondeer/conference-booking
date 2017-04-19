@@ -37,10 +37,11 @@
                 <div class="control-group">
                   <label class="control-label">Date of Event:</label>
                   <div class="controls">
-                  <div  data-date="2017-18-04" class="input-append date datepicker">
-                    <input type="text" name="day_schedule" value="2017-19-04"  data-date-format="mm-dd-yyyy" >
-                    <span class="add-on"><i class="icon-th"></i></span> </div>
-                </div>
+                    <div  data-date="2017-18-04" class="input-append date datepicker">
+                      <input type="text" name="day_schedule" value="2017-19-04"  data-date-format="mm-dd-yyyy" >
+                      <span class="add-on"><i class="icon-time"></i></span>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="control-group">
@@ -74,11 +75,11 @@
         <div class="col-md-4">
           <div class="panel panel-default">
             <div class="panel-heading">
-                Basic Tabs
+                How To Book Conference Room
             </div>
             <div class="panel-body">
                 <ul class="nav nav-tabs">
-                    <li class="active"><a href="#home" data-toggle="tab">Home</a>
+                    <li class="active"><a href="#home" data-toggle="tab">MTRH</a>
                     </li>
                     <li class=""><a href="#profile" data-toggle="tab">Profile</a>
                     </li>
@@ -90,8 +91,8 @@
 
                 <div class="tab-content">
                     <div class="tab-pane fade active in" id="home">
-                        <h4>Home Tab</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h4>Intro To MTRH Tab</h4>
+                        <p></p>
                     </div>
                     <div class="tab-pane fade" id="profile">
                         <h4>Profile Tab</h4>
