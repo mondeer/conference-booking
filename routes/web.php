@@ -30,3 +30,7 @@ Route::get('/rooms/bookings', 'RoomCtrl@view');
 Route::get('/system/admin', function() {
   return view('admin.admindash');
 });
+
+Route::get('/system/roomreg', function() {
+  return view('admin.roomregister');
+});

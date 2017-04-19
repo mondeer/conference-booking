@@ -89,6 +89,7 @@
         </ul>
    </div>
 
+   @yield('admin')
 
   </div>
 </div>
