@@ -45,10 +45,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">
+                <div class="row">
 
-                    <img src="/img/mtrh.png" width="80" height="80" />
-                </a>
+                  <div class="col-md-4">
+                    <a class="navbar-brand" href="/">
+
+                        <img src="/img/mtrh.png" width="80" height="80" />
+                    </a>
+                  </div>
+
+                  <div class="col-md-4">
+                    <a class="navbar-brand" href="/">
+                        Karibu Sana: <br>{{Sentinel::getUser()->first_name}}
+                    </a>
+                  </div>
+
+                </div>
+
 
             </div>
         </div>

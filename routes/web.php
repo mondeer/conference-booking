@@ -40,3 +40,5 @@ Route::delete('/system/{id}/delete', 'RoomCtrl@destroy');
 
 // client/employee routes
 Route::get('/room/book', 'BookCtrl@create');
+
+Route::post('/room/book', 'BookCtrl@postCreate');

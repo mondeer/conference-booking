@@ -37,8 +37,20 @@
                 <div class="control-group">
                   <label class="control-label">Date of Event:</label>
                   <div class="controls">
-                    <input type="text" data-date="01-04-2017" data-date-format="dd-mm-yyyy" value="01-04-2017" class="datepicker" name="day_schedule" placeholder="Day of Event" required/>
-                    <span class="help-block">*PLEASE USE dd-mm-yyyy format</span>
+                  <div  data-date="2017-18-04" class="input-append date datepicker">
+                    <input type="text" name="day_schedule" value="2017-19-04"  data-date-format="mm-dd-yyyy" >
+                    <span class="add-on"><i class="icon-th"></i></span> </div>
+                </div>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label">Name Of Room :</label>
+                  <div class="controls">
+                    <select class="" name="department">
+                      <option>ICT</option>
+                      <option>HOUSE KEEPING</option>
+                      <option>NURSING</option>
+                    </select>
                   </div>
                 </div>
 
