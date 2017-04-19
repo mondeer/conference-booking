@@ -20,15 +20,15 @@ class RegisterCtrl extends Controller
     ]);
 
     $admin = Sentinel::findRoleBySlug('admin');
-    $hr = Sentinel::findRoleBySlug('hr');
+    $users = Sentinel::findRoleBySlug('user');
 
     $role = $request->input('role');
 
     if($role =='admin'){
       $admin->users()->attach($user);
     }
-    elseif($request->input('role')=='hr'){
-      $hr->users()->attach($user);
+    elseif($request->input('role')=='user'){
+      $users->users()->attach($user);
     }
 
     return redirect('/');

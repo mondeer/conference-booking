@@ -12,9 +12,9 @@ class LoginCtrl extends Controller
       $user = Sentinel::forceAuthenticate($request->all());
 
       if(Sentinel::getUser()->roles()->first()->slug == 'admin'){
+        return redirect('/system/admin');
+      } elseif (Sentinel::getUser()->roles()->first()->slug == 'user') {
         return redirect('/client/panel');
-      } elseif (Sentinel::getUser()->roles()->first()->slug == 'hr') {
-        return redirect('/room');
       } else {
         return redirect('/');
       }
