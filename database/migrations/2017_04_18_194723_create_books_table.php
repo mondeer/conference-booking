@@ -15,8 +15,6 @@ class CreateBooksTable extends Migration
     {
         Schema::create('books', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('room_name')->nullable();
-            $table->integer('room_number');
             $table->integer('hours_schedule');
             $table->date('day_schedule');
             $table->string('attendance')->nullable();

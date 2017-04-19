@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Book extends Model
 {
-    protected $fillable = ['emp_name', 'email', 'pf', 'department', 'room'];
+    protected $fillable = ['hours_schedule', 'day_schedule', 'attendance', 'department'];
 }

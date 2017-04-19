@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Maruti Admin</title>
+<title>MTRH Conference Room Booking</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="{{ asset ('admin/css/bootstrap.min.css')}}" />
@@ -14,7 +14,7 @@
 
 <!--Header-part-->
 <div id="header">
-  <h1><a href="dashboard.html">Maruti Admin</a></h1>
+  <h1><a href="dashboard.html">MTRH</a></h1>
 </div>
 <!--close-Header-part-->
 
