@@ -69,14 +69,14 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 	opacity: 0.9;
 }
 /* Top user navigation */
-#sidebar{ width:100%; background:#49cced;  position:absolute; clear:both; top:62px;}
+#sidebar{ width:100%; background:#3399FF;  position:absolute; clear:both; top:62px;}
 #sidebar > ul{ margin:0px; padding:0px; width:100%; display:block; z-index:999;} 
-#sidebar > ul > li { list-style-type:none; float:left; display:block; margin:0px; border-right:1px solid #41bedd; position:relative; padding:10px; cursor:pointer} 
+#sidebar > ul > li { list-style-type:none; float:left; display:block; margin:0px; border-right:1px solid #3399FF; position:relative; padding:10px; cursor:pointer} 
 #sidebar > ul > li a{ padding:12px 0;}
 #sidebar > ul > li:hover ul { display:block;} 
-#sidebar > ul > li:hover { background-color:#41bedd;} 
+#sidebar > ul > li:hover { background-color:#3399FF;} 
 #sidebar > ul > li:hover a{ background:none;}
-#sidebar > ul li ul { margin:0px; padding:0px; display:none; z-index:999;  position:absolute; left:0px; top:40px;  background:#41bedd; min-width:200px;} 
+#sidebar > ul li ul { margin:0px; padding:0px; display:none; z-index:999;  position:absolute; left:0px; top:40px;  background:#3399FF; min-width:200px;} 
 #sidebar > ul li ul li { list-style-type:none; margin:0px; font-size:12px;line-height:30px;  } 
 #sidebar > ul li ul li a { display:block; padding:5px 10px; color:#fff; text-decoration:none; font-weight:bold; } 
 #sidebar > ul li ul li:hover a{ background-color:#36a8c5;} 
@@ -1090,7 +1090,7 @@ span.icon .checker {
     cursor: default !important;
 }
 .dataTables_paginate span .ui-state-disabled, .pagination.alternate li.active a {
-    background: #41BEDD !important;
+    background: #3399FF !important;
     color: #ffffff !important;
     cursor: default !important;
 }
@@ -1315,11 +1315,11 @@ form {
 	
 #sidebar { float: none; width: 100% !important;	display:block; position:relative; top:0px;}
 #sidebar > ul{ margin:0px; padding:0px; width:100%; display:block; z-index:999; position:relative} 
-#sidebar > ul > li { list-style-type:none; display:block; border-top:1px solid #41BEDD; float:none !important; margin:0px; position:relative; padding:2px 10px; cursor:pointer} 
+#sidebar > ul > li { list-style-type:none; display:block; border-top:1px solid #3399FF; float:none !important; margin:0px; position:relative; padding:2px 10px; cursor:pointer} 
 #sidebar > ul > li:hover ul { display:none;} 
 #sidebar > ul > li:hover { background-color:#36A8c5;} 
 #sidebar > ul > li:hover a{ background:none;}
-#sidebar > ul li ul { margin:0px; padding:0px; top:35px; z-index:999; display:none; position:absolute;  background:#41BEDD; width:100%; min-width:100%; border-radius:none;} 
+#sidebar > ul li ul { margin:0px; padding:0px; top:35px; z-index:999; display:none; position:absolute;  background:#3399FF; width:100%; min-width:100%; border-radius:none;} 
 #sidebar > ul li ul li { list-style-type:none; margin:0px; font-size:12px; line-height:30px;  } 
 #sidebar > ul li ul li a { display:block; padding:5px 10px; color:#fff; text-decoration:none; font-weight:bold; } 
 #sidebar > ul li ul li:hover a{ background-color:#36A8c5; border-radius:0px;} 
@@ -1354,7 +1354,7 @@ form {
 }
 
 @media (min-width: 481px) and (max-width: 970px) {
-	body{ background:#49CCED}
+	body{ background:#3399FF}
 	#header h1 {
 		top:20px;
 	}
@@ -1365,7 +1365,7 @@ form {
 
 	#sidebar > ul > li{ float:none;}
 	#sidebar > ul > li:hover ul{ display:block;}
-	#sidebar, #sidebar > ul {	width: 43px; display: block; position: absolute; background:#49CCED; height:100%; z-index:1;}
+	#sidebar, #sidebar > ul {	width: 43px; display: block; position: absolute; background:#3399FF; height:100%; z-index:1;}
 	#sidebar > ul ul {
 		display: none;
 		position: absolute;

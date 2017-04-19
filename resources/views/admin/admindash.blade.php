@@ -14,7 +14,7 @@
 
 <!--Header-part-->
 <div id="header">
-  <h1><a href="dashboard.html">MTRH</a></h1>
+  <h1><a href="/system/admin">MTRH</a></h1>
 </div>
 
 <!--top-Header-menu-->
