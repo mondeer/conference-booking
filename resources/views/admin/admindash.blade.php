@@ -54,22 +54,9 @@
     <li> <a href="/manage/schedules"><i class="icon icon-calendar"></i> <span>Manage Schedules</span></a> </li>
     <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Manage Conference Rooms</span> <span class=""><i class="icon icon-chevron-down"></i></span></a>
       <ul>
-        <li><a href="form-common.html">Available Rooms</a></li>
-        <li><a href="form-validation.html">Register New Room</a></li>
-        <li><a href="form-wizard.html">Remove Room </a></li>
-      </ul>
-    </li>
-    <li><a href="tables.html"><i class="icon icon-th"></i> <span>Tables</span></a></li>
-    <li><a href="grid.html"><i class="icon icon-fullscreen"></i> <span>Full width</span></a></li>
-
-    <li><a href="buttons.html"><i class="icon icon-tint"></i> <span>Buttons &amp; icons</span></a></li>
-    <li><a href="interface.html"><i class="icon icon-pencil"></i> <span>Eelements</span></a></li>
-    <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>Addons</span> <span class="label label-important">4</span></a>
-      <ul>
-        <li><a href="index2.html">Dashboard2</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="calendar.html">Calendar</a></li>
-        <li><a href="chat.html">Chat option</a></li>
+        <li><a href="/system/rooms/view">Available Rooms</a></li>
+        <li><a href="/system/roomreg">Register New Room</a></li>
+        <li><a href="/system/rooms/view">Remove Room </a></li>
       </ul>
     </li>
   </ul>
