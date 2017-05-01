@@ -81,30 +81,54 @@
                 <ul class="nav nav-tabs">
                     <li class="active"><a href="#home" data-toggle="tab">MTRH</a>
                     </li>
-                    <li class=""><a href="#profile" data-toggle="tab">Profile</a>
+                    <li class=""><a href="#booking" data-toggle="tab">Booking</a>
                     </li>
-                    <li class=""><a href="#messages" data-toggle="tab">Messages</a>
+                    <li class=""><a href="#deleting" data-toggle="tab">Deleting</a>
                     </li>
-                    <li class=""><a href="#settings" data-toggle="tab">Settings</a>
+                    <li class=""><a href="#editing" data-toggle="tab">Editing</a>
                     </li>
                 </ul>
 
                 <div class="tab-content">
                     <div class="tab-pane fade active in" id="home">
-                        <h4>Intro To MTRH Tab</h4>
-                        <p></p>
+                        <h4>Intro To MTRH</h4>
+                        <li><i class="icon icon-ok"></i>Coolest Place</li>
+                        <li><i class="icon icon-ok"></i>MRI IKO</li>
+                        <li><i class="icon icon-ok"></i>Ni Kubwa</li>
+                        <li><i class="icon icon-ok"></i>Security Wako</li>
                     </div>
-                    <div class="tab-pane fade" id="profile">
-                        <h4>Profile Tab</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <div class="tab-pane fade" id="booking">
+                        <h4>How To Book A conference room</h4>
+                        <p>
+                          You sit down, then you start thinking of Venue of your little meetup, we got you covered
+                        </p>
+                        <li><i class="icon icon-ok"></i>Login Kwanza</li>
+                        <li><i class="icon icon-ok"></i>Check Available Rooms</li>
+                        <li><i class="icon icon-ok"></i>Select That which suites you</li>
+                        <li><i class="icon icon-ok"></i>There you have it, fill in the form and submit, you will be routed to my bookings page</li>
                     </div>
-                    <div class="tab-pane fade" id="messages">
-                        <h4>Messages Tab</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <div class="tab-pane fade" id="deleting">
+                        <h4>How To Role Back A Booking</h4>
+                        <p>
+                          Sometimes you do things you were not supposed to do, adn you wonder how to role it back, we make easy
+                        </p>
+                        <li><i class="icon icon-ok"></i>Accept the Mistake</li>
+                        <li><i class="icon icon-ok"></i>Go to My Bookings</li>
+                        <li><i class="icon icon-ok"></i>A table will avail all your Bookings</li>
+                        <li><i class="icon icon-ok"></i>Delete Your Mistake, then walk away like nothing happened</li>
                     </div>
-                    <div class="tab-pane fade" id="settings">
-                        <h4>Settings Tab</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <div class="tab-pane fade" id="editing">
+                      <h4>How To Role Back A Booking</h4>
+                      <p>
+                        Sometimes you do things you were not supposed to do, adn you wonder how to role it back, we make easy
+                      </p>
+                      <li><i class="icon icon-ok"></i>Accept the Mistake</li>
+                      <li><i class="icon icon-ok"></i>Go to My Bookings</li>
+                      <li><i class="icon icon-ok"></i>A table will avail all your Bookings</li>
+                      <li><i class="icon icon-ok"></i>Delete Your Mistake, then walk away like nothing happened</li>
                     </div>
                 </div>
             </div>

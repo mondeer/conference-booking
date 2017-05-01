@@ -76,7 +76,7 @@
                             <li><a class="menu-top-active" href="#">Dashboard</a></li>
                             <li><a href="#">Available Rooms</a></li>
                             <li><a href="/room/book">Request For a Conference Room</a></li>
-                            <li><a href="/rooms/view/bookings">My Bookings</a></li>
+                            <li><a href="/client/mybookings">My Bookings</a></li>
                             <li><a href="/logout"
                                 onclick="event.preventDefault();
                                          document.getElementById('logout-form').submit();">
