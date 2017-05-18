@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="control-group">
-                  <label class="control-label">Name Of Room :</label>
+                  <label class="control-label">Your Department :</label>
                   <div class="controls">
                     <select class="" name="department">
                       <option>ICT</option>

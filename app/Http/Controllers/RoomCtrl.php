@@ -4,6 +4,7 @@ namespace glado\Http\Controllers;
 
 use Illuminate\Http\Request;
 use glado\Room;
+use glado\Book;
 
 class RoomCtrl extends Controller
 {
@@ -49,5 +50,11 @@ class RoomCtrl extends Controller
       $room->save();
 
       return redirect('/system/rooms/view')->with('room', $room);
+    }
+
+    public function manageBookings() {
+      $bookings = Book::all();
+
+      return view('admin.bookings')->with('bookings', $bookings);
     }
 }

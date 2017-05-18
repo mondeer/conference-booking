@@ -39,6 +39,8 @@ Route::get('/system/room/edit/{id}', 'RoomCtrl@editRoom');
 Route::put('/system/room/edit/{id}', 'RoomCtrl@updateRoom');
 
 Route::delete('/system/{id}/delete', 'RoomCtrl@destroy');
+
+Route::get('/system/manage/bookings', 'RoomCtrl@manageBookings');
 // end admin routes
 
 

@@ -59,8 +59,7 @@
     <ul class="quick-actions">
           <li> <a href="/system/rooms/view"> <i class="icon-look"></i>Board Rooms</a> </li>
           <li> <a href="#"> <i class="icon-web"></i>New Board Room </a> </li>
-          <li> <a href="#"> <i class="icon-people"></i> Manage Users </a> </li>
-          <li> <a href="#"> <i class="icon-calendar"></i> Manage Events </a> </li>
+          <li> <a href="#"> <i class="icon-people"></i>Manage Bookings </a> </li>
         </ul>
    </div>
 
