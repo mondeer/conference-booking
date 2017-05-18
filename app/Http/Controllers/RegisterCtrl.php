@@ -20,14 +20,14 @@ class RegisterCtrl extends Controller
     ]);
 
     $admin = Sentinel::findRoleBySlug('admin');
-    $users = Sentinel::findRoleBySlug('user');
+    $users = Sentinel::findRoleBySlug('departmental');
 
     $role = $request->input('role');
 
     if($role =='admin'){
       $admin->users()->attach($user);
     }
-    elseif($request->input('role')=='user'){
+    elseif($request->input('role')=='departmental'){
       $users->users()->attach($user);
     }
 

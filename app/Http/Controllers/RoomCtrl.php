@@ -15,7 +15,6 @@ class RoomCtrl extends Controller
       $room = new Room;
 
       $room->room_name = $request->input('room_name');
-      $room->room_number = $request->input('room_number');
       $room->capacity = $request->input('capacity');
       $room->save();
 
@@ -34,5 +33,21 @@ class RoomCtrl extends Controller
       $room->delete();
 
       return redirect('/system/rooms/view');
+    }
+
+    public function editRoom($id) {
+      $room = Room::findOrFail($id);
+
+      return view('admin.roomedit')->with('room', $room);
+    }
+
+    public function updateRoom(Request $request, $id) {
+      $room = Room::findOrFail($id);
+
+      $room->room_name = $request->input('room_name');
+      $room->capacity = $request->input('capacity');
+      $room->save();
+
+      return redirect('/system/rooms/view')->with('room', $room);
     }
 }

@@ -34,6 +34,10 @@ Route::post('/system/roomreg', 'RoomCtrl@postCreate');
 
 Route::get('/system/rooms/view', 'RoomCtrl@viewrooms');
 
+Route::get('/system/room/edit/{id}', 'RoomCtrl@editRoom');
+
+Route::put('/system/room/edit/{id}', 'RoomCtrl@updateRoom');
+
 Route::delete('/system/{id}/delete', 'RoomCtrl@destroy');
 // end admin routes
 

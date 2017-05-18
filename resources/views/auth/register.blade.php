@@ -41,8 +41,8 @@
                             <div class="col-md-6">
                                 <select class="form-control" name="role">
                                   <option></option>
-                                  <option>admin</option>
-                                  <option>user</option>
+                                  <option value="admin">Admin</option>
+                                  <option value="departmental">Departmental Head</option>
                                 </select>
                             </div>
                         </div>
